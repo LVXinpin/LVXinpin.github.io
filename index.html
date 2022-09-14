@@ -1,97 +1,107 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自我介绍</title>
-    
-    </head>
-      <style> 
-       *{
-            margin:0px;
-            padding: 0px;
-            list-style: none;
-        }
+    <style>
+        #person_photo {
+			background-color: rgb(249, 152, 168);
+		}
+		#email,#phone {
+			font-size: 16px;
+			color: rgb(3, 2, 3);
+		}
         body{
-          background :url(img/1.jpg)
+            background: url(img/5.jpg);
         }
-        #main{
-            height: 490px;
-            width: 1100px;
-            margin: 0 auto;
-           
-}
-        #main_left {
-            background:rgba(253, 255, 255, 0.3);
-            float: left;
-            width: 400px;
-            /*display: inline-block;*/
-        
-        }
-        #main_left span {
-            font-weight: bold;
-}
-        
-        #main_right {
-            background:rgba(253, 255, 255, 0.3);
-            float: right;
-            position: relative;
-            width: 680px;
-            margin-left: 20px;
-          
-}
-        #main_right p {
-    width: 500px;
-    display: inline-block;
-    margin-left: 10px;
-    text-indent: 32px;
-    line-height: 30px;
-    margin-top: 10px;
-}
-
-        h1{
-            text-align: center;
-        }
-        span{
-            background-color:palevioletred;
-            color:white;
-        }
-    
-        
+		#name {
+			color:rgb(0, 0, 0) ;
+			font-size: 20px;
+		}
+		#about {
+			color: rgb(0, 0, 0);
+			font-size: 18px;
+			font-weight: bold;
+		}
     </style>
-
+</head>
 <body>
-    <h1 ><span>自我介绍</span></h1>
-        <div id="main">
-            <div id="main_left">
-                <h2><br>关于我</h2>
     
-                <p>
-   <h2><span >姓名: 吕薪萍</span></h2><br>
-   <h2><span >学号: 20101010125</span></h2><br>
-   <h2><span >爱好：敲代码</span></h2><br>
-   <h2><span>班级: 计算机科学与技术20级1班</span></h2><br>
-   <span>代码技术：一般</span></p>
-   <img src="img/2.gif" alt="Smiley face" width="300" height="250"></body>
-        </div>
-    <div id="main_right">
-        <h2>
-           <br> 学习WEB前端的体会
-        </h2>
-        <h2><p><span >
-   1、自律</h2>
-        </span></p>
-        <h2><p><span >
-    2、制定良好的学习路线
-        </span></p></h2><br>
-        <h2><p><span >
-    3、坚定目标,持之以恒
-        </span></p></h2><br>
-        <h2><p><span >
-    4、敢于尝试
-        </span></p></h2>
-    </div>
-</div>
-    </body>
+	<table border="0" width="800" height="800" cellpadding="0" cellspacing="0" align="center">
+		<tr>
+			<!-- <td bgcolor="#f2f2f2"></td> -->
+			<td id="person_photo" width="260">
+
+				<table border="0" width="260" height="800" cellpadding="0" cellspacing="0" valign="top">
+					<tr>
+						<td height="120"></td>
+					</tr>
+					<tr align="right">
+						<td height="100"><img src="2/1.jpg"></td>
+					</tr>
+					<tr align="right" width="260">
+						<td id="name" height="21">吕薪萍</td>
+					</tr>
+					<tr align="right">
+						<td id="phone" height="17">18381194761</td>
+					</tr>
+            
+                <tr align="right">
+                    <td id="class" height="17">计算机科学与技术20级1班</td>
+                </tr>
+
+                <td>
+				</table>
+
+			</td>
+
+			<td width="30"></td>
+
+			<td width="480">
+				<table border="0" width="480" height="800" cellpadding="0" cellspacing="0">
+					<tr height="90">
+						<td></td>
+					</tr>
+					<tr>
+						<td height="150" align="right">
+							<img src="2/1.jpg">
+							<br /><br />
+							<hr />	
+						</td>
+					
+					</tr>
+					<tr>
+						<td height="320" valign="top">
+
+							<table cellpadding="0" cellspacing="0" border="0" height="260" width="480">
+								
+								<tr>
+									<td colspan="4" id="about" height="30">个人基本情况</td>
+				
+								</tr>
+                                <tr height="20">
+									<td height="20"><b>姓 名：</b></td>
+									<td width="140">吕薪萍</td>
+									<td height="20"><b>籍 贯：</b></td>
+									<td width="140">四川眉山</td>
+								</tr>
+								<tr height="20">
+									<td height="20"><b>性 别：</b></td>
+									<td width="140">女</td>
+									<td height="20"><b>身 高：</b></td>
+									<td width="140">165cm</td>
+								
+								<tr height="20">
+									<td height="20"><b>电 话：</b></td>
+									<td width="140">18381194761</td>
+									<td height="20"><b>现居住地：</b></td>
+									<td width="140">四川轻化工大学</td>
+								</tr>
+								<tr height="20">
+									<td height="20"><b>专 业：</b></td>
+									<td width="140">计算机科学与技术</td>
+								</tr>	
+</body>
 </html>
