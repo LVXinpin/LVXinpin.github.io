@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="分享.css">
+    <title>留言</title>
+
+   </body>
+</head>
+<body>
+ <div class="top">留言板</div>
+    <div class="thi">
+        <form action="lv.php" method="post" name="n">
+            <p>姓&nbsp&nbsp名:<input type="text"style="width:300px;height:20px" name="one"></p>
+            <p>电子邮件：<input type="text" style="width:500px;height:20px"name="two"></p>
+           <div class="liu">写下你想对我说的话吧</div>
+           <textarea></textarea>
+        <button>提交</button>
+        <ul></ul>
+            </form>
+    </div>
+    
+    <script>
+        var txt = document.querySelector("textarea");
+        var btn = document.querySelector("button");
+        var ul = document.querySelector("ul");
+        //给button绑定点击事件
+        btn.onclick = function () {
+            if (txt.value == "") {//当文本框中没有文字时，提示
+                alert("您没有输入内容")
+            } else {
+                //创建元素li作为留言区
+                var li = document.createElement("li");
+                //将文本框中的内容放到li中,a标签中href中的内容代表什么都不执行
+                li.innerHTML = txt.value + "<a href='javascript:;'>删除</a>"
+                txt.value = "";
+                ul.insertBefore(li, ul.children[0]);
+                var as = document.querySelectorAll("a");
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
