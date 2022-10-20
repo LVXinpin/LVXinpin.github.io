@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人博客</title>
+		<link  rel = "stylesheet"href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" >
+		<link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+		<body background="img/2.1.webp"
+		style=" background-size:100% 100%;
+		background-attachment: fixed;">
+		</body>
+	</head>
+	<style>*{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+	}
+	.top{
+		height: 30px;
+		background-color:rgb(239, 214, 239);
+	}
+	.left{
+		float: left;
+		width: 30px;
+		margin-left: 30px;
+	}
+	.name{
+		line-height: 30px;
+		color: black;
+		font-size: 15px;
+		font-family: "宋体";
+		margin-left: 5px;
+		float: left;
+	}
+	.nav{
+		color: black;
+		float: left;
+		font-family: "华文新魏";
+		margin-left: 50px;
+	}
+	.li:active{
+	transform: scale(0,98);
+	
+	}
+	.nav ul li{
+		float: left;
+		line-height: 30px;
+		font-size: 16px;
+		margin-left: 20px;
+		margin-right: 20px;
+		left: 300px;
+	   
+	}
+	.nav li:hover{
+		border-top: 2px solid rgb(96, 66, 159);
+	}
+	a{
+		 color:rgb(197, 123, 197);
+		text-decoration: none;
+	
+	}
+	.blank{
+		height: 50px;
+	}
+	.left2{
+		margin: 0 auto;
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+	}
+	.left2-img{
+		float: left;
+		margin-left: 75px;
+		margin-top: 100px;
+		width: 150px;
+		height: 150px;
+		border-radius:100%;
+		overflow:hidden;
+		color: cornflowerblue;
+		font-size: larger;
+	}
+	.box1{
+		position: absolute;
+		color:#E7328D;
+		font-size:30px;
+		text-align: center;
+		height: 200px;
+		padding-top: 50px;
+	}
+	.footer {
+		text-align: center;
+		position: fixed;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		height: 50px;
+		background-color: #394F66;
+		z-index: 9999;
+	}</style>
+	<body>
+	<div class="top">
+			<div class="left"><img src="img/1.jpg"width="30";height="30" ></div>
+				<div class="name">💻敲代码很溜</div>
+				<div class="nav">
+					<ul>
+						<li class="animated bounce"><a href="关于我.html">关于我</a></li>
+						<li class="animated bounce"><a href="分享.html">留言</a></li>
+						<li class="animated bounce"><a href="swiper.html">咸🐟日记</a></li>
+					</ul>
+				</div>
+	</div>
+	<div class="blank"> </div>
+	<div class="left2">
+		<div class="left2-img"><img src="img/1.jpg"width="150";height="150";></div>
+	</div>   
+	<div class="box1"class="animated bounce">Hey!这里是敲代码很溜的个人博客 
+	</div> 
+	<div class="footer">地址：四川轻化工大学 邮编:6200000 联系方式:123456789 版权信息:无</div>
+	<script>
+  
+        var box1 =document.querySelector('.box1') // 获取事件源
+        var timer = setInterval(function(){
+           if( box1.offsetLeft >= 500){
+               clearInterval(timer); // 清除定时器
+           }else{
+                // 每50毫秒就将新的值给box1.left
+                box1.style.left  = box1.offsetLeft +2 +'px';
+           }
+        },50)
+    </script>
+	 <script src="dist/js/swiper-bundle.min.js"></script>
+</html>
+
